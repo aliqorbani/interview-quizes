@@ -13,7 +13,7 @@ if ($status_code != 200) {
 $products    = json_decode($res, true);
 $result      = $products['result'];
 $sort_column = array_column($result, 'product_price');
-array_multisort($sort_column, SORT_DESC, $result);?>
+array_multisort($sort_column, SORT_DESC, $result); ?>
 <table border="1" align="center">
     <thead>
     <tr>
@@ -22,11 +22,11 @@ array_multisort($sort_column, SORT_DESC, $result);?>
     </tr>
     </thead>
     <tbody>
-    <?php foreach ($result as $product) {?>
-    <tr>
-        <td><?php echo $product['product_title']; ?></td>
-        <td><?php echo $product['product_price']; ?></td>
-    </tr>
+    <?php foreach ($result as $product) { ?>
+        <tr>
+            <td><?php echo $product['product_title']; ?></td>
+            <td><?php echo $product['product_price']; ?></td>
+        </tr>
     <?php } ?>
     </tbody>
 </table>
