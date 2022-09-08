@@ -4,3 +4,4 @@ let second_form = document.querySelectorAll('form')[1],//we get second form it c
 hello_word_span.addEventListener("click", function () {
     second_form.submit();
 });
+//all done
