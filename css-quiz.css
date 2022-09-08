@@ -1,0 +1,4 @@
+form:nth-of-type(2):hover input:first-of-type{
+    background: red;
+}
+/*as interviewer requested we have to find out second form on hover change the first input background*/
